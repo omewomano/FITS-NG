@@ -1,36 +1,45 @@
-body {
-     padding-top: 90px;
+.d-border{
+  border-bottom: solid 1px #000;
 }
-.test{height: 890px; border: dashed 2px red}
+a{
+ color: #000! important;
+}
 
+.showing{
+  border: dashed 1px red;
+}
+body{
+  margin-top:73px
+}
 
- @media only screen and (max-width:768px){
+.visible{
+  border: 1px solid #000;
+  border-top: none;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  box-shadow: 3px 3px 1px #AAA7A7;
+}
 
-    
-    .navbar-collapse.collapse.in>body{
-    padding-top: 100px;
-    }
+.nav-link.active{
+  color: #0A5F97! important;
+  font-weight: bold
+}
+.btn-black{
+  background-color: #000;
+  color:#fff! important;
+}
+.card:hover{
+  box-shadow: 1px 1px 1px 1px #666;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
  }
 
 
-
-/*<div class="navbar-collapse collapse in" id="bs-example-navbar-collapse-1" aria-expanded="false" style="height: 1px;">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">Link</a></li>
-                    <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">One more separated link</a></li>
-                    </ul>
-                    </li>
-                </ul>
-                
-                
-                </div>*/
+ @media only screen and (min-width: 768px) {
+ .hidden-from-pc{
+   display: none;
+ }
+}
