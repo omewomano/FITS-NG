@@ -43,3 +43,7 @@ body{
    display: none;
  }
 }
+
+.list-group-item{
+  border: none! important;
+}
