@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
-      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white d-border">
+  <body data-spy="scroll" data-target="#navbar-example2" data-offset="200">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white d-border" id="navbar-example2">
         <a class="navbar-brand" href="#">
             <img src="assets/fitslogo.png" width="auto" height="auto" class="d-inline-block align-top" alt="">
           </a>
@@ -19,17 +19,18 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end no-gutters" id="navbarSupportedContent">
           <div class="navbar-nav col-md-7 d-flex justify-content-between"> 
-            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">Services</a>
-            <a class="nav-item nav-link" href="#">About us</a>
-            <a class="nav-item nav-link" href="#">Gallery</a>
-            <a class="nav-item nav-link" href="#">Contact Us</a>
+            <a class="nav-item nav-link active" href="#carou">Home</a>
+            <a class="nav-item nav-link" href="#services">Services</a>
+            <a class="nav-item nav-link" href="#aboutUs">About us</a>
+            <a class="nav-item nav-link" href="#gallery">Gallery</a>
+            <a class="nav-item nav-link" href="#contactUs">Contact Us</a>
             <a class="nav-item nav-link hidden-from-pc" href="tel:+2348122492116" >Call</a>
           </div>
         </div>          
       </nav>
         <!-- end of nav  -->
         <!-- beginning of carousel -->
+      <div id="carou"></div>
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -65,8 +66,8 @@
       </div>
       <!-- end of carousel -->
       <!-- beging of body of contents -->
-      <div class="row justify-content-center no-gutters">
-        <div class="col-md-11 showing py-3">
+      <div class="row justify-content-center no-gutters pt-2">
+        <div class="col-md-11 py-3" id="services">
           <h2 class=" col-12 text-center font-weight-bold mb-0">Available Services</h2>
           <p class="col-12 text-center mt-0">we offer the following Services</p>
           <div class="row justify-content-center no-gutters px-0 pb-4">
@@ -74,66 +75,91 @@
             <!-- webdesign card -->
             <div class="col-md-3 mb-3 px-1">
               <div class="card">
-                <img class="card-img-top" src="assets/red.png" alt="Card image cap">
-                <div class="card-body px-2">
+                <img class="card-img-top" src="assets/web-design.png" alt="Card image cap">
+                 <div class="card-body px-2">
                   <h4 class="card-title text-center">Websites Design &amp; Maintenance</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-black">Go somewhere</a>
+                  <p class="card-text">
+                    We design high quality and professional websites from the scratch to finish using the 
+                    best available technology to fit the requirements of our clients.
+                  </p>
+                  <div class="row">
+                      <a href="webDesign.html" class="col-4 btn btn-black mx-auto">See more</a>
+                  </div>
                 </div>
               </div>
             </div>
+           
             <!-- social Media marketing/ management -->
             <div class="col-md-3 px-1">
               <div class="card">
-                <img class="card-img-top" src="assets/green.png" alt="Card image cap">
+                <img class="card-img-top" src="assets/social-med.png" alt="Card image cap">
                 <div class="card-body px-2">
                   <h4 class="card-title text-center">Social Media Marketing &amp; Management</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-black">Go somewhere</a>
+                  <p class="card-text">
+                    We bring out the best of social media platforms, make the needed changes &amp; convert visitors to customers. 
+                    we are Google Certified
+                  </p>
+                  <div class="row">
+                      <a href="SocialMedia.html" class="col-4 btn btn-black mx-auto">See more</a>
+                  </div>
                 </div>
               </div>
             </div>
             <!-- Mobile Apps -->
             <div class="col-md-3 px-1">
               <div class="card">
-                <img class="card-img-top" src="assets/blue.png" alt="Card image cap">
+                <img class="card-img-top mt-1" src="assets/mobile-app.png" alt="Card image cap ">
                 <div class="card-body px-2">
                   <h4 class="card-title text-center">Mobile Apps Development</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-black">Go somewhere</a>
+                  <p class="card-text">
+                    We develop light weight mobile applications with for all mobile platforms to serve the needs of our clients and 
+                    also contain all modern features.
+                  </p>
+                  <div class="row">
+                      <a href="mobileApp.html" class="col-4 btn btn-black mx-auto">See more</a>
+                  </div>
                 </div>
               </div>
             </div>
             <!-- Branding and Graphics -->
             <div class="col-md-3 px-1">
               <div class="card">
-                <img class="card-img-top" src="assets/red.png" alt="Card image cap">
+                <img class="card-img-top" src="assets/brands.jpg" alt="Card image cap">
                 <div class="card-body px-2">
                   <h4 class="card-title text-center">Branding &amp; Graphics</h4>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-black">Go somewhere</a>
+                  <p class="card-text">
+                    we create high quality branded items for both official and personal use. we boast of one of the most qualified personels
+                    whom guaranty quality branding and graphics. 
+                  </p>
+                  <div class="row">
+                      <a href="Branding.html" class="col-4 btn btn-black mx-auto">See more</a>
+                  </div>
                 </div>
               </div>
             </div>
             <!-- Analytics and profile management -->
             <div class="col-md-3 px-1">
                 <div class="card">
-                  <img class="card-img-top" src="assets/green.png" alt="Card image cap">
+                  <img class="card-img-top" src="assets/analytics.png" alt="Card image cap">
                   <div class="card-body px-2">
                     <h4 class="card-title text-center">Analytics &amp; Online Reputation Management</h4>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-black">Go somewhere</a>
+                    <div class="row">
+                        <a href="webDesign.html" class="col-4 btn btn-black mx-auto">See more</a>
+                    </div>
                   </div>
                 </div>
               </div>
             <!-- IT solutions -->
             <div class="col-md-3 px-1">
               <div class="card">
-                <img class="card-img-top" src="assets/blue.png" alt="Card image cap">
+                <img class="card-img-top" src="assets/it-solution.png" alt="Card image cap">
                 <div class="card-body px-2">
                   <h4 class="card-title text-center">General IT Solutions</h4>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-black align-center">Go somewhere</a>
+                  <div class="row">
+                      <a href="webDesign.html" class="col-4 btn btn-black mx-auto">See more</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -141,7 +167,7 @@
           <hr>
           <!-- about us begins -->
           <div class="col-md-12">
-          <div class="row">
+          <div class="row" id="aboutUs">
             <div class="col-md-12">
                 <h2 class=" col-12 text-center font-weight-bold mb-0">About Us</h2>
                 <p class="col-12 text-center mt-0 pb-3">Learn About Us And How We Operate</p>
@@ -174,10 +200,11 @@
               </div>
             </div>
             <div class="col-md">
+                <h5 class="text-center">Our Vision, Mission &amp; Core Values</h5>
               <nav class="nav nav-tabs" id="myTab" role="tablist">
-                <a class="nav-item nav-link active" id="ourVision" data-toggle="tab" href="#ourVision" role="tab" aria-controls="ourVision" aria-expanded="true">Our vision</a>
-                <a class="nav-item nav-link" id="ourMission" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile">Our Mission</a>
-                <a class="nav-item nav-link" id="OurCoreValues" data-toggle="tab" href="#ourCoreValues" role="tab" aria-controls="nav-profile">Our Core Values</a>
+                <a class="nav-item nav-link active" id="ourVision" data-toggle="tab" href="#ourVision" role="tab" aria-controls="ourVision" aria-expanded="true">Vision</a>
+                <a class="nav-item nav-link" id="ourMission" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile">Mission</a>
+                <a class="nav-item nav-link" id="OurCoreValues" data-toggle="tab" href="#ourCoreValues" role="tab" aria-controls="nav-profile">Core Values</a>
               </nav>
               <div class="tab-content px-3 pt-3" id="nav-tabContent">
                 <!-- tab 1 -->
@@ -205,7 +232,7 @@
           <!-- about Us ends -->
           <hr>
           <div class="row no-gutters">
-            <div class="col-md-12">
+            <div class="col-md-12" id="gallery">
               <h2 class=" col-12 text-center font-weight-bold mb-0">Gallery</h2>
               <p class="col-12 text-center mt-0 pb-3">View a selected Few of our past Jobs!</p>
             </div>     
@@ -230,8 +257,13 @@
       <!-- full width contact us -->
      
       </div>
+      <hr>
       <div class="row no-gutters">
         
+        <div class="col-md-12" id="contactUs">
+          <h2 class=" col-12 text-center font-weight-bold mb-0">Contact Us</h2>
+          <p class="col-12 text-center mt-0 pb-3">Our Contact Details</p>
+        </div> 
         <div class="col-md-10 bg-dark text-white pl-1 py-1">
             <div id="map"></div>
         </div>
@@ -244,7 +276,7 @@
       <div class="col-md-12 pt-3">
         <div class="row">
           <div class="col-md-4">
-              <h4 class="text-center">find us here</h4>
+              <h4 class="text-center">Find us here</h4>
               <div class="list-group">
                 <a class="list-group-item pl-0" href="#"><i class="fa fa-phone-square fa-2x fa-fw" aria-hidden="true"></i><span >Phone: +2348122492116</span></a>
                 <a class="list-group-item pl-0" href="#"><i class="fa fa-globe fa-2x fa-fw" aria-hidden="true"></i><span class="">Website: www.fits.com</span></a>
@@ -252,7 +284,7 @@
               </div>
           </div>
           <div class="col-md-8 col px-4">
-              <h4>Contact Us Form</h4>
+              <h4 class="text-center">Contact Us Form</h4>
               <form action="https://formcarry.com/s/Hk0OKZMpZ" method="POST" accept-charset="UTF-8" autocomplete="on">
                   <div class="row mb-3">
                       <div class="col">
@@ -261,7 +293,7 @@
                       </div>
                       <div class="col">
                           <label for="exampleFormControlInput1">Email address</label>
-                          <input type="email" class="form-control"  placeholder="name@example.com" name="Email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
+                          <input type="email" class="form-control"  placeholder="name@example.com" name="Email" required>
                       </div>
                     </div>
                     <div class="row">
@@ -283,6 +315,14 @@
                 </form>
           </div>
         </div>
+      </div>
+      <hr>
+      <div class="footer text-center py-2 my-2">
+        <i class="fa fa-facebook-square fa-2x fa-fw" aria-hidden="true"></i>
+        <i class="fa fa-twitter-square fa-2x fa-fw" aria-hidden="true"></i>
+        <i class="fa fa-linkedin-square fa-2x fa-fw" aria-hidden="true"></i><br>
+        <div class="pt-2"><small class="">&#169; Flexy IT Solutions 2017 </small></div>
+        
       </div>
        <!-- end of full width contact us -->
 
