@@ -253,8 +253,7 @@
           </div>
           <div class="col-md-8 col px-4">
               <h4>Contact Us Form</h4>
-              <!-- <form action="https://formcarry.com/s/Hk0OKZMpZ" method="POST" accept-charset="UTF-8" > -->
-                <form class="ajaxForm" action="https://formcarry.com/s/{Hk0OKZMpZ}" method="POST" accept-charset="UTF-8"></form>
+              <form action="https://formcarry.com/s/Hk0OKZMpZ" method="POST" accept-charset="UTF-8" autocomplete="on">
                   <div class="row mb-3">
                       <div class="col">
                         <label for="exampleFormControlInput1">Name</label>
@@ -262,13 +261,13 @@
                       </div>
                       <div class="col">
                           <label for="exampleFormControlInput1">Email address</label>
-                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="Email" required>
+                          <input type="email" class="form-control"  placeholder="name@example.com" name="Email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
                       </div>
                     </div>
                     <div class="row">
                         <div class="col">
                             <label for="exampleFormControlInput1">Phone Number</label>
-                            <input type="text" class="form-control" placeholder="Phone Number" required>
+                            <input type="text" class="form-control" placeholder="Phone Number" pattern="[0-9]{7,11}" required>
                         </div>
                         <div class="col">
                           <label for="exampleFormControlInput1">Subject</label>
@@ -276,25 +275,16 @@
                         </div>
                       </div>
                   <div class="form-group">
-                    
-                  </div>                
-                  <div class="form-group">
                     <label for="exampleFormControlTextarea1">Message</label>
-                    <textarea class="form-control" id="MessageBody" rows="5" name="Message"></textarea>
+                    <textarea class="form-control" rows="5" name="Message" required></textarea>
                   </div>
                   <input type="text" name="_gotcha" style="display:none" />
                   <button type="submit" class="btn btn-dark"  value="Send">Submit Message</button>
                 </form>
-
           </div>
         </div>
       </div>
-      <form class="ajaxForm" action="https://formcarry.com/s/{Hk0OKZMpZ}" method="POST">
-        <input type="email" name="email">
-        <input type="submit" value="Send">
-      </form>
        <!-- end of full width contact us -->
-       
 
         <script>
             function initMap() {
@@ -319,28 +309,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/52e8dbd3d4.js"></script>
     <!-- Google Maps -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script>
-$(function(){
-    $(".ajaxForm").submit(function(e){
-        e.preventDefault();
-        var href = $(this).attr("action");
-        $.ajax({
-            type: "POST",
-            dataType: "json",
-            url: href,
-            data: $(this).serialize(),
-            success: function(response){
-                if(response.status == "success"){
-                    alert("We received your submission, thank you!");
-                }else{
-                    alert("An error occured: " + response.message);
-                }
-            }
-        });
-    });
-});
-</script>
+
   </body>
 </html>
 <!-- <div class="modal-body">
