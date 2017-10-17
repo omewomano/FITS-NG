@@ -21,7 +21,7 @@ body{
 }
 
 .nav-link.active{
-  color: #0A5F97! important;
+  color: #920000! important;
   font-weight: bold
 }
 .btn-black{
@@ -46,4 +46,12 @@ body{
 
 .list-group-item{
   border: none! important;
+}
+
+.card-img-top{
+  height: 200px;
+}
+
+.toggle-name:hover{
+  cursor: pointer
 }
