@@ -2,6 +2,13 @@
 <html lang="en">
   <head>
     <title>Flexy IT Solutions</title>
+
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+<link rel="manifest" href="assets/manifest.json">
+<link rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,7 +16,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body data-spy="scroll" data-target="#navbar-example2" data-offset="200">
+  <body data-spy="scroll" data-target="#navbar-example2" data-offset="80">
       <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white d-border" id="navbar-example2">
         <a class="navbar-brand" href="#">
             <img src="assets/fitslogo.png" width="auto" height="auto" class="d-inline-block align-top" alt="">
@@ -67,11 +74,12 @@
       <!-- end of carousel -->
       <!-- beging of body of contents -->
       <div class="row justify-content-center no-gutters pt-2">
-        <div class="col-md-11 py-3" id="services">
-          <h2 class=" col-12 text-center font-weight-bold mb-0">Available Services</h2>
-          <p class="col-12 text-center mt-0">we offer the following Services</p>
-          <div class="row justify-content-center  px-0 pb-4">
-           
+        <div class="col-md-11 py-3 anchor-outer">
+          <div class="row justify-content-center  px-0 pb-4" id="services">
+            <div class="col-md-12 anchor-inner">
+            <h2 class=" col-12 text-center font-weight-bold mb-0">Available Services</h2>
+            <p class="col-12 text-center mt-0">we offer the following Services</p>
+          </div>
             <!-- beginning of the cards for services -->
             <!-- webdesign card -->
             <div class="col-md-3 mb-3 col-md-px-3">
@@ -167,9 +175,9 @@
           </div>
           <hr>
           <!-- about us begins -->
-          <div class="col-md-12">
+          <div class="col-md-12 anchor-outer">
           <div class="row" id="aboutUs">
-            <div class="col-md-12">
+            <div class="col-md-12 anchor-inner">
                 <h2 class=" col-12 text-center font-weight-bold mb-0">About Us</h2>
                 <p class="col-12 text-center mt-0 pb-3">Learn About Us And How We Operate</p>
             </div>
@@ -236,9 +244,10 @@
           </div>
         </div>
           <!-- about Us ends -->
+          <!-- gallery begins -->
           <hr>
-          <div class="row no-gutters">
-            <div class="col-md-12" id="gallery">
+          <div class="row no-gutters" id="gallery">
+            <div class="col-md-12 anchor-inner">
               <h2 class=" col-12 text-center font-weight-bold mb-0">Gallery</h2>
               <p class="col-12 text-center mt-0 pb-3">View a selected Few of our past Jobs!</p>
             </div>     
@@ -264,9 +273,8 @@
      
       </div>
       <hr>
-      <div class="row no-gutters">
-        
-        <div class="col-md-12" id="contactUs">
+      <div class="row no-gutters" id="contactUs">        
+        <div class="col-md-12 anchor-inner">
           <h2 class=" col-12 text-center font-weight-bold mb-0">Contact Us</h2>
           <p class="col-12 text-center mt-0 pb-3">Our Contact Details</p>
         </div> 
@@ -332,7 +340,9 @@
       </div>
        <!-- end of full width contact us -->
 
-        <script>
+       
+       
+       <script>
             function initMap() {
               var uluru = {lat: 6.495345, lng: 3.194484};
               var map = new google.maps.Map(document.getElementById('map'), {
