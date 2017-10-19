@@ -145,6 +145,7 @@ pre code {
   float: left;
   width: 100%;
   margin: 0 auto;
+  margin-top: -38px;
 }
 
 
@@ -301,7 +302,6 @@ pre code {
     width: 70%;
     height: 200px;
     margin: 150px auto 100px;
-    border: 1px dashed red;
   }
 
   .gallery a img{
