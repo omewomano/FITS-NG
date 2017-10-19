@@ -324,5 +324,14 @@ pre code {
   .direct{
     margin-top: -220px;
   }
+
+  .right-bordered{
+    border-right: none! important;
+  }
+
+  .top-bordered{
+    border-top: 1px solid #aaa;
+    padding-top: 12px;
+  }
  }
 
