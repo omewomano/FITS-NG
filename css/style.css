@@ -101,10 +101,10 @@ body{
 }
 
 
-.floating-msg i{
+.floating-msg-2  {
   border: solid 1px #920000;
-  width:5%;
+  width:70px;
+  height: 70px;
   border-radius: 50%;
-  color: #fff;
   background-color: #920000;
 }
