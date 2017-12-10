@@ -25,8 +25,10 @@ body{
   font-weight: bold
 }
 .btn-black{
-  background-color: #000;
-  color:#fff! important;
+  color:#920000! important;
+  border: 2px solid #920000;
+  text-align: center;
+  border-radius: 9px
 }
 .card:hover{
   box-shadow: 1px 1px 1px 1px #666;
@@ -50,6 +52,10 @@ body{
 
 .card-img-top{
   height: 200px;
+  width: 60%! important;
+}
+.card-img-short{
+  height: 180px;
 }
 
 .toggle-name:hover{
@@ -107,4 +113,12 @@ body{
   height: 70px;
   border-radius: 50%;
   background-color: #920000;
+}
+
+.brown{
+  color:  #920000;
+}
+
+.brown-hover:hover{
+  color:  #920000! important;
 }
