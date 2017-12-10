@@ -9,7 +9,7 @@ a{
   border: dashed 1px red;
 }
 body{
-  margin-top:73px
+  margin-top:107px
 }
 
 .visible{
@@ -71,11 +71,11 @@ body{
 } */
 
 .anchor-outer {
-  margin-top:-90px;
+  margin-top:-124px;
 }
 
 .anchor-inner {
-  padding-top:90px;
+  padding-top:124px;
 }
 
 @media (max-width: 979px) {
