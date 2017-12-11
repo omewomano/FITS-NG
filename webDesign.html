@@ -63,16 +63,64 @@
             </div>
           </div>
        </div>
-       <div class="col-md-12">        
-        <div class="row fixed-bottom">
-          <div class="col-auto mr-auto"></div>
-            <div class="col-auto floating-msg-2 mr-4 mb-3">
-                <a href="index.html#contactUsForm"><i class="fa fa-envelope-open fa-2x fa-fw text-center text-white pt-3" aria-hidden="true"></i></a>
+       <div class="col-md-12 fixed-bottom">
+         <div class="row">
+           <div class="col-12 mb-3">
+              <div class="collapse" id="collapseExample">
+                <div class="form-card">
+                    <div class="col-md-8 col px-4">
+                      <h4 class="text-center mt-3">Contact Us Form</h4>
+                      <form action="https://formcarry.com/s/Hk0OKZMpZ" method="POST" accept-charset="UTF-8" autocomplete="on">
+                        <div class="row mb-3">
+                          <div class="col">
+                            <label for="exampleFormControlInput1">Name</label>
+                            <input type="text" class="form-control" placeholder="Name" name="Name" required>
+                          </div>
+                          <div class="col">
+                              <label for="exampleFormControlInput1">Email</label>
+                              <input type="email" class="form-control"  placeholder="name@example.com" name="Email" required>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col">
+                              <label for="exampleFormControlInput1">Phone Number</label>
+                              <input type="text" class="form-control" placeholder="Phone Number" pattern="[0-9]{7,11}" required>
+                          </div>
+                          <div class="col">
+                            <label for="exampleFormControlInput1">Subject</label>
+                            <input type="text" class="form-control" placeholder="Subject" name="Subject" required>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlTextarea1">Message</label>
+                          <textarea class="form-control" rows="5" name="Message" required></textarea>
+                        </div>
+                        <input type="text" name="_gotcha" style="display:none" />
+                        <button type="submit" class="btn btn-dark mb-2"  value="Send">Submit Message</button>
+                      </form>
+                    </div>
+                </div>
+              </div>
+           </div>
+
+            <div class="row fixed-bottom">
+                <div class="col-auto mr-auto"></div>
+                
+                <div class="col-auto floating-msg-2 mr-4 mb-3"  data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <a href="index.html#contactUsForm"><i class="fa fa-envelope-open fa-2x fa-fw text-center text-white pt-3" aria-hidden="true"></i></a>
+                </div>
             </div>
-        </div>
+          </div>
       </div>
-      <div class="footer text-center py-2 my-2">    
-        <hr>
+          
+      
+      <div class="footer text-center py-2 my-2">  
+          <hr>
+          <div class="col-md-12 one">
+              Useful Links <br>
+               <a href="socialMedia.html">Social media management</a> <a href="branding.html">Branding</a> 
+              <a href="mobileApp.html">Mobile App</a> <a href="analytics">Analytics &amp; profile management</a> <a href="itsolution.html">IT Solutions</a>
+            </div>  
         <i class="fa fa-facebook-square fa-2x fa-fw" aria-hidden="true"></i>
         <i class="fa fa-twitter-square fa-2x fa-fw" aria-hidden="true"></i>
         <i class="fa fa-linkedin-square fa-2x fa-fw" aria-hidden="true"></i><br>

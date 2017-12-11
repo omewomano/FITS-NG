@@ -5,6 +5,10 @@ a{
  color: #000! important;
 }
 
+a:hover{
+  color: #920000! important;
+}
+
 .showing{
   border: dashed 1px red;
 }
@@ -96,6 +100,13 @@ body{
   body {
     padding-top:0px;
   }
+  .navbar-brand{
+    width: 75%;
+  }
+
+  .navbar-brand img{
+    width: 100%;
+  }
 
   .anchor-outer {
     margin-top:0px;
@@ -121,4 +132,19 @@ body{
 
 .brown-hover:hover{
   color:  #920000! important;
+}
+
+.one a{
+  border-right: 1px solid #000;
+  padding-right: 14px;
+}
+
+.one a:last-child{
+  border-right: none;
+}
+
+.form-card{
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #eee;
 }
